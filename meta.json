@@ -1,0 +1,13 @@
+{
+ "slug": "cable-bunny",
+ "title": "Cable Bunny",
+ "hook": "Is it a charge-only cable? Ask the bunny.",
+ "intro": "Cable Bunny is a passive USB-C cable tester shaped like a bunny. Plug both ends of a cable into the two USB-C receptacles that are its feet and press its nose: a CR2032 drives every line of the first receptacle, and every line that reaches the second one lights its own LED in the bunny's ears, VBUS, GND and CC in the left ear and D+, D- and SBU in the right. A heart LED says the cell is good. There is no MCU and no firmware.",
+ "what": [
+  "**Source foot (J1):** every line (VBUS, CC, D+, D-, SBU) driven from the test rail through its own 150 Ω, both rows of the receptacle joined so either plug orientation works.",
+  "**Far foot (J2):** each arriving line lights its own 0603 LED through 220 Ω to the far receptacle's ground, which reaches the cell only through the cable's ground wire; the GND LED (330 Ω from the rail) proves that wire. The far shell is not connected.",
+  "**Nose:** a TS-1187A button that connects the cell only while pressed, through a B5819W Schottky that stops a powered cable from back-feeding the lithium cell.",
+  "**Heart:** a red LED on the test rail: if the heart lights and an ear LED doesn't, that wire is broken.",
+  "**Power:** one CR2032 in a Keystone 3034 holder, about 12,000 three-second tests (SPEC.md)."
+ ]
+}

@@ -1,0 +1,498 @@
+{
+  "parts": {
+    "bound": 25,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "BT1",
+        "C1",
+        "SW1",
+        "D1",
+        "J1",
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5",
+        "J2",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "R12"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C165948",
+      "C2287",
+      "C5213768"
+    ],
+    "extended_fee_usd": 9.0,
+    "findings": [
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "3 distinct Extended parts, about $9 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 25,
+    "nets": 22,
+    "noConnects": [
+      "J2.SH"
+    ],
+    "ran": true,
+    "seconds": 0.6
+  },
+  "schematic": {
+    "paper": "A3",
+    "file": "cable_bunny.kicad_sch",
+    "ran": true,
+    "seconds": 0.5
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 0.6
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 22,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "board": {
+    "footprints": 25,
+    "outline_mm": [
+      60.0,
+      98.0
+    ],
+    "stackup": {
+      "copper": 2,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_2layer"
+    },
+    "art": {
+      "items": 27,
+      "shapes": 119,
+      "keepouts": 3,
+      "qr": 1,
+      "by_layer": {
+        "F.SilkS": 107,
+        "F.Cu": 2,
+        "F.Mask": 2,
+        "B.SilkS": 8
+      }
+    },
+    "finish": {
+      "mask": "White",
+      "silk": "Black",
+      "copper": "ENIG"
+    },
+    "ran": true,
+    "seconds": 0.4
+  },
+  "place": {
+    "parts": 25,
+    "log": [
+      "D2 -> (14.50, 10.00) rot 0 : rung 0 lock: VBUS LED in the left ear",
+      "D7 -> (15.23, 16.00) rot 0 : rung 0 lock: GND LED in the left ear",
+      "D3 -> (15.97, 22.00) rot 0 : rung 0 lock: CC LED in the left ear",
+      "D4 -> (40.71, 10.00) rot 0 : rung 0 lock: D+ LED in the right ear",
+      "D5 -> (39.97, 16.00) rot 0 : rung 0 lock: D- LED in the right ear",
+      "D6 -> (39.23, 22.00) rot 0 : rung 0 lock: SBU LED in the right ear",
+      "SW1 -> (30.00, 46.40) rot 0 : rung 0 lock: the nose: boop to test",
+      "D8 -> (30.00, 55.20) rot 0 : rung 0 lock: the heart: the cell is good",
+      "R12 -> (34.60, 55.20) rot 0 : rung 0 lock: ",
+      "BT1 -> (30.00, 70.00) rot 0 : rung 0 lock: the cell in the belly",
+      "C1 -> (30.00, 84.40) rot 0 : rung 0 lock: reservoir",
+      "D1 -> (30.00, 91.00) rot 90 : rung 0 lock: back-feed Schottky between the feet",
+      "J1 -> (20.00, 93.40) rot 0 : rung 0 lock: left foot: the source end",
+      "J2 -> (40.00, 93.40) rot 0 : rung 0 lock: right foot: the far end",
+      "R1 -> (15.00, 84.60) rot 90 : rung 0 lock: 150 ohm line driver",
+      "R2 -> (16.90, 84.60) rot 90 : rung 0 lock: 150 ohm line driver",
+      "R3 -> (18.80, 84.60) rot 90 : rung 0 lock: 150 ohm line driver",
+      "R4 -> (20.70, 84.60) rot 90 : rung 0 lock: 150 ohm line driver",
+      "R5 -> (22.60, 84.60) rot 90 : rung 0 lock: 150 ohm line driver",
+      "R6 -> (35.60, 84.60) rot 90 : rung 0 lock: LED resistor",
+      "R7 -> (37.50, 84.60) rot 90 : rung 0 lock: LED resistor",
+      "R8 -> (39.40, 84.60) rot 90 : rung 0 lock: LED resistor",
+      "R9 -> (41.30, 84.60) rot 90 : rung 0 lock: LED resistor",
+      "R10 -> (43.20, 84.60) rot 90 : rung 0 lock: LED resistor",
+      "R11 -> (45.10, 84.60) rot 90 : rung 0 lock: LED resistor"
+    ],
+    "ran": true,
+    "seconds": 0.2
+  },
+  "route": {
+    "before": 58,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "stats": {
+      "tracks": 244,
+      "vias": 27,
+      "length_mm": 1033.8,
+      "length_by_layer_mm": {
+        "B.Cu": 328.1,
+        "F.Cu": 705.7
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 8,
+            "renamed": 0,
+            "nets": 23
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 9.8,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 0,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 244,
+          "vias": 27,
+          "length_mm": 1033.8,
+          "length_by_layer_mm": {
+            "B.Cu": 328.1,
+            "F.Cu": 705.7
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 8,
+            "renamed": 0,
+            "nets": 23
+          },
+          "viaViaClearance_mm": null
+        },
+        "seconds": 24.6,
+        "ok": true,
+        "log": {
+          "nets": {},
+          "timedOut": false,
+          "noProgress": false,
+          "last_unrouted": 2,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "open_by_net": {},
+        "stats": {
+          "tracks": 256,
+          "vias": 29,
+          "length_mm": 1021.7,
+          "length_by_layer_mm": {
+            "B.Cu": 337.2,
+            "F.Cu": 684.5
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 27,
+        "seconds": 9.8
+      },
+      "1_nofanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 29,
+        "seconds": 24.6
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": false,
+    "ran": true,
+    "seconds": 38.1
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 0,
+    "gnd_pour_layers": [
+      "B.Cu"
+    ],
+    "stitched": false,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [],
+    "stats": {
+      "tracks": 244,
+      "vias": 27,
+      "length_mm": 1033.8,
+      "length_by_layer_mm": {
+        "B.Cu": 328.1,
+        "F.Cu": 705.7
+      }
+    },
+    "ran": true,
+    "seconds": 0.5
+  },
+  "silk": {
+    "silk_clipped": 6,
+    "art_obstacles": 115,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 0,
+    "refs_seated": 0,
+    "refs_hidden": 25,
+    "title_offset_mm": [
+      0.0,
+      0.0
+    ],
+    "title_lines": 2,
+    "stitch_vias_displaced": 0,
+    "ran": true,
+    "seconds": 0.2
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "29267bb2e5aa5cecdd67ba11f6ecfe608d52fef3e60eb070d5228d1e414180e6",
+    "errors": 0,
+    "warnings": 2,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {
+      "lib_footprint_mismatch": 2
+    },
+    "repairs": [],
+    "seconds": 1.1
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_2layer",
+    "copper_layers": 2,
+    "errors": 0,
+    "warnings": 1,
+    "rows": [
+      {
+        "rule": "footprint_silk_width",
+        "severity": "warning",
+        "count": 74,
+        "min_mm": 0.12,
+        "note": "stock footprint silk down to 0.12 mm; the fab prints it at its 0.15 mm minimum"
+      }
+    ],
+    "qr": [
+      {
+        "text": "https://heypcb.ai/world/b/e8dc1e4d9cfb",
+        "layer": "B.Silkscreen",
+        "module_mm": 0.414,
+        "floor_mm": 0.3,
+        "ok": true
+      }
+    ],
+    "finish": {
+      "mask": "White",
+      "silk": "Black",
+      "copper": "ENIG"
+    }
+  },
+  "fab": {
+    "gerbers": [
+      "cable_bunny-B_Cu.gbl",
+      "cable_bunny-B_Mask.gbs",
+      "cable_bunny-B_Paste.gbp",
+      "cable_bunny-B_Silkscreen.gbo",
+      "cable_bunny-Edge_Cuts.gm1",
+      "cable_bunny-F_Cu.gtl",
+      "cable_bunny-F_Mask.gts",
+      "cable_bunny-F_Paste.gtp",
+      "cable_bunny-F_Silkscreen.gto",
+      "cable_bunny-job.gbrjob"
+    ],
+    "copper_layers": 2,
+    "copper_gerbers": [
+      "cable_bunny-F_Cu.gtl",
+      "cable_bunny-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "cable_bunny-job.gbrjob",
+      "layer_number": 2,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "cable_bunny-F_Cu.gtl",
+        "cable_bunny-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        1.51
+      ],
+      "dielectric": [
+        "FR4"
+      ]
+    },
+    "drill": [
+      "cable_bunny.drl",
+      "cable_bunny-drl_map.gbr"
+    ],
+    "zip": "cable_bunny_gerbers.zip",
+    "pos": "cable_bunny_pos.csv",
+    "cpl": "cable_bunny_cpl_jlc.csv",
+    "cpl_rotations_corrected": 0,
+    "bom": "cable_bunny_bom.csv",
+    "schematic_pdf": "cable_bunny_schematic.pdf",
+    "step": "cable_bunny.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 1.6
+  }
+}
